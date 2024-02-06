@@ -11,6 +11,6 @@ jobs:
 
       - name: Build and push the image
         run: |
-          docker login --username kirpandu --password "${{ secrets.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 }}"
+          docker login --username kirpandu --password "${{ secrets.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}}"
           docker build -t ghcr.io/kirpandu/arithmetic-service:latest --file Dockerfile .
           docker push ghcr.io/kirpandu/arithmetic-service:latest
