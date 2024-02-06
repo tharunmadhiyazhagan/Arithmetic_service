@@ -8,7 +8,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-
+        registry: ghcr.io
+        username: ${{ github.kirpandu }}
+        password: ${{ secrets.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 }}
       - name: Build and push the image
         run: |
           docker login --username kirpandu --password "${{ secrets.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}}"
