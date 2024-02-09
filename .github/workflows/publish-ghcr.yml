@@ -10,8 +10,8 @@ jobs:
         uses: docker/login-action@v3
         with:
           registry: ghcr.io
-          username: ${{ github.kirpandu }}
-          password: ${{ secrets.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 }}
+          username: ${{ github.KirthivasanPN-hash }}
+          password: ${{ secrets.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}}
 
   build_and_publish:
     runs-on: ubuntu-latest
